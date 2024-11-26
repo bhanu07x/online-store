@@ -3,9 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Login</title>
+  <style>
+    body{
+      background-color:rgb(236, 234, 234);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin:0px
+    }
+    .login{
+      height: 50%;
+      width: 30%;
+      /* justify-content: center; */
+      background-color: white;
+      border-radius: 10%;
+    }
+    input{
+      width: 90%;
+      height: 100%;
+      padding: 10px;
+      margin-left: 15px;
+      margin-bottom: 15px;
+
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    input:hover{
+      border: 1px black strong;
+    }
+    label{
+      margin-left:15px;
+
+    }
+    button{
+      width: 90%;
+      height: 35px;
+      margin-left: 15px;
+      border:none;
+      border-radius: 10px;
+      background-color: rgba(98, 106, 224, 0.589);
+      font-size: medium;
+      font-family: 'Times New Roman', Times, serif;
+      font-style: italic;
+      color:rgba(243, 242, 239, 0.959);
+    }
+    p{
+      text-align: center;
+    }
+    a{
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
-  <h1>Login</h1>
+  <div class="login">
+       
+    <form class="data">
+      <h1 style="text-align: center;">Login</h1>
+      <label>Username</label>
+      <br>
+      <input type="text" placeholder="Enter your user name"/>
+      <br>
+      <label>Password</label>
+      <br>
+      <input type="password" placeholder="Enter your password"/>
+      <br>
+      <button>Login</button>
+    </form>
+    <p>Dont have an account ?<a href="#">Signup</a></p>
+  </div>
 </body>
 </html>
