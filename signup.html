@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 <style>
+    @media (max-width: 768px) {
+    .sign {
+        width: 90%; /* Adjust the width for smaller screens */
+        margin-left: 5%; /* Center align for smaller screens */
+        margin-top: 5%; /* Reduce top margin */
+    }
+}
+
+@media (min-width: 769px) {
+    .sign {
+        width: 25%; /* Original width for larger screens */
+        margin-left: 70%; /* Original margin */
+        margin-top: 7%; /* Original top margin */
+    }
+}
+
     body{
         margin:0;
         background-image:url(assets/images/background2.png);
@@ -15,13 +31,12 @@
         /* background-color:rgb(204, 216, 205); */
     }
     .sign{
-        margin-left:70%;
-        margin-top:7%;
        background-color:white;
         border-radius: 8px;
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-       height: 60%;
-       width: 25%;
+        width: 25%;
+    max-width: 400px;
+    min-width: 300px
     }
     label{
         color: rgb(85, 95, 95);
