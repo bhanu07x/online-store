@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+        margin:0;
+        background-image:url(assets/images/background2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        /* background-color:rgb(204, 216, 205); */
+    }
+    .sign{
+        margin-left:70%;
+        margin-top:7%;
+       background-color:white;
+        border-radius: 8px;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+       height: 60%;
+       width: 25%;
+    }
+    label{
+        color: rgb(85, 95, 95);
+        margin-bottom:1%;
+        margin-left:1%;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    input{
+        width:90%;
+        height:20px;
+        border: 1px solid black;
+        border-radius: 10px;
+        margin-bottom:1%;
+        margin-left:1%;
+    }
+    h1{
+        color: rgba(27, 26, 27, 0.753);
+        text-align: center;
+        font-family:'Times New Roman', Times, serif
+    }
+    button{
+        text-align: center;
+        margin-left: 8px;
+        width:90%;
+        height: 35px;
+        border: none;
+        border-radius:4px;
+        font-size: medium;
+        color: white;
+        background-color: rgb(71, 49, 133);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    p{
+        margin:0;
+        text-align: center;
+    }
+    .imgs{
+        display: flex; 
+        justify-content:center;
+ 
+        
+    }
+    img{
+        height:9%;
+        width: 9%;
+        padding: 1%;
+    }
+
+    
+</style>
+
+</head>
+<body>
+    <!-- <img src="assets/images/signup.png" class="logo"/> -->
+    <div class="sign">
+        <h1>Signup</h1>
+        <form class="data">
+            <label>FullName</label>
+            <br>
+            <input type="text" name="fullname"/>
+            <br>
+            <label>DOB</label>
+            <br>
+            <input type="date" name="dob"/>
+            <br>
+            <label>Email</label>
+            <br>
+            <input type="email" name="email"/>
+            <br>
+            <label>Phone</label>
+            <br>
+            <input type="text" name="phone"/>
+            <br>
+            <label>Password</label>
+            <br>
+            <input type="password" name="pass"/>
+            <br>
+            <button>SignIn</button>
+        </form>
+        <p>or</p>
+        <div class="imgs">
+            <img src="assets/images/download.png"/>
+            <img src="assets/images/facebook.png"/>
+        </div>
+
+    </div>
+</body>
+</html>
